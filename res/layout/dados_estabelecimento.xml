@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/txvLblNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nome_estabelecimento"
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+        android:textColor="#774F38"/>
+
+    <TextView
+        android:id="@+id/txvNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceLarge" 
+        android:paddingBottom="5pt"/>
+
+    <TextView
+        android:id="@+id/txvLblEndereco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/endereco_estabelecimento"
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+        android:textColor="#774F38"/>
+
+    <TextView
+        android:id="@+id/txvEndereco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceLarge" 
+        android:paddingBottom="5pt"/>
+
+    <TextView
+        android:id="@+id/txvLblCidade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cidade_estabelecimento"
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+        android:textColor="#774F38"/>
+
+    <TextView
+        android:id="@+id/txvCidade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceLarge" 
+        android:paddingBottom="5pt"/>
+
+    <TextView
+        android:id="@+id/txvLblTelefone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/telefone_estabelecimento"
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+        android:textColor="#774F38"/>
+
+    <TextView
+        android:id="@+id/txvTelefone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceLarge" 
+        android:paddingBottom="5pt"/>
+
+</LinearLayout>

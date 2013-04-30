@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">OndeComer</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="login">Login:</string>
+	<string name="senha">Senha:</string>
+	<string name="digitarLogin">Digite seu login:</string>
+	<string name="digitarSenha">Digite sua senha:</string>
+	<string name="confirmar">Confirmar</string>
+	<string name="limpar">Limpar</string>
+	<string name="efetuarLogin">Efetuar Login</string> 
+	<string name="listarEstabelecimentos">Listar Estabelecimentos</string>
+	
+	<string name="nome_estabelecimento">Nome Estabelecimento:</string> 
+	<string name="endereco_estabelecimento">Endereço:</string> 
+	<string name="cidade_estabelecimento">Cidade:</string> 
+	<string name="telefone_estabelecimento">Telefone:</string>
+	<string name="menu_dados_estabelecimento">Dados estabelecimento</string> 
+	<string name="menu_cardarpio">Cardápio</string> 
+	<string name="menu_sair">Sair</string> 
+	<string name="title_activity_cardapio">Cardapio</string> 
+	<string name="label_produto">Produto:</string> 
+	<string name="label_ingredientes">Ingredientes:</string> 
+	<string name="label_valor">Valor:</string>
+</resources>

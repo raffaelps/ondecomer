@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView 
+        android:id="@+id/txtLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        />
+    
+    <EditText 
+        android:id="@+id/edtLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/digitarLogin"
+        />
+    
+    <TextView 
+        android:id="@+id/txtSenha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/senha"
+        />
+    
+    <EditText
+        android:id="@+id/edtSenha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/digitarSenha"
+        android:inputType="textPassword" />
+    
+    <Button 
+	    android:id="@+id/btnEntrar"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="@string/confirmar"
+	    android:onClick="EfetuarLogin"	    
+	    />
+    
+	<Button 
+	    android:id="@+id/btnLimpar"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="@string/limpar"
+	    android:onClick="Limpar"	  
+	      
+	    />
+	
+	<TextView
+	    android:id="@+id/txtStatusLogin"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    />
+    
+</LinearLayout>
