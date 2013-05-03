@@ -34,7 +34,7 @@ public class ControllerListaEstabelecimento extends Activity{
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.menu_adm, menu);
+		getMenuInflater().inflate(R.menu.menu_user, menu);
 		return true;
 	}
 	
@@ -45,10 +45,8 @@ public class ControllerListaEstabelecimento extends Activity{
 		
 		switch (opcao){
 		case R.id.efetuarLogin:
-			Intent abrirView = new Intent(this,ControllerLogin.class);
-			startActivity(abrirView);
-			break;
-		case R.id.lista_estabelecimentos:
+			Intent intent_login = new Intent(this,ControllerLogin.class);
+			startActivity(intent_login);
 			break;
 		default:
 			break;

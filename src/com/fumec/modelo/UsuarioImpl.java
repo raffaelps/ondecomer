@@ -12,11 +12,11 @@ public class UsuarioImpl implements Usuario {
 	}
 	
 	@Override
-	public boolean ValidarLogin() {
+	public boolean validarLogin() {
 
 		statusLoginSenha = "";
 		
-		if (!login.equals("Leo")){
+		if (!login.equals("leo")){
 			this.setStatusLoginSenha("Login inválido");
 		}
 		else if (!senha.equals("12345")){

@@ -5,9 +5,7 @@ import com.fumec.modelo.UsuarioImpl;
 
 import android.os.Bundle;
 import android.app.Activity;
-import android.content.Intent;
 import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -31,43 +29,28 @@ public class ControllerLogin extends Activity {
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.menu_adm, menu);
-		return true;
+		//getMenuInflater().inflate(R.menu.menu_adm, menu);
+		return false;
 	}
 	
-	@Override
-	public boolean onOptionsItemSelected(MenuItem item){
-		
-		int opcao = item.getItemId();
-		
-		switch (opcao){
-		case R.id.efetuarLogin:
-			break;
-		case R.id.lista_estabelecimentos:
-			Intent abrirView = new Intent(this,ControllerListaEstabelecimento.class);
-			startActivity(abrirView);
-			break;
-		default:
-			break;
-		}
-		
-		return super.onOptionsItemSelected(item);
-		
-	}
-	
-
-	
-	public void EfetuarLogin(View v){
+	public void efetuarLogin(View v){
 
 		String login = objLogin.getText().toString();
 		String senha = objSenha.getText().toString();
 		UsuarioImpl usuario = new UsuarioImpl(login,senha);
-		usuario.ValidarLogin();
+		boolean retorno_validacao = usuario.validarLogin();
 		
-		objStatusLogin.setText(usuario.getStatusLoginSenha());
+		if (retorno_validacao)
+		{
+			 			
+		}
+		else
+		{
+			objStatusLogin.setText(usuario.getStatusLoginSenha());
+		}
 	}
 	
-	public void Limpar(View v){
+	public void limpar(View v){
 		
 		objLogin.setText("");
 		objSenha.setText("");

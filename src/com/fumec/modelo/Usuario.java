@@ -2,7 +2,7 @@ package com.fumec.modelo;
 
 public interface Usuario {
 	
-	public boolean ValidarLogin();
+	public boolean validarLogin();
 	
 	public void setLogin(String value);
 	
