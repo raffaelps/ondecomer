@@ -1,19 +1,23 @@
 package com.fumec.controller;
 
+import java.util.ArrayList;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import com.fumec.modelo.EstabelecimentoDTO;
 import com.fumec.ondecomer.R;
+import com.fumec.util.EstabelecimentoAdapter;
 
 public class ControllerListaEstabelecimento extends Activity{
 	
-	
-	ListView objListaEstabelecimentos;
+	private ListView objListaEstabelecimentos;
+	private ArrayList<EstabelecimentoDTO> listaEstabelecimentos = null;
+	private EstabelecimentoAdapter estabelecimentoAdapter = null;
 	
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -21,13 +25,32 @@ public class ControllerListaEstabelecimento extends Activity{
 		
 		
 		objListaEstabelecimentos = (ListView) findViewById(R.id.lista_estabelecimentos);
+
+        //ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,layout,nomesEstabelecimentos); 
+        //objListaEstabelecimentos.setAdapter(adapter);
         
-        String[] nomesEstabelecimentos={"Boteco do Zezé","Jack Tequila","Cantinho do João","Bar do Tião"}; //Conteiner de dados
-        int layout = android.R.layout.simple_list_item_1;
+        this.preencherListaEstabelecimentos();
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,layout,nomesEstabelecimentos); 
-        objListaEstabelecimentos.setAdapter(adapter);
+	}
+	
+	protected void preencherListaEstabelecimentos()
+	{
+		EstabelecimentoDTO estabelecimento1 = new EstabelecimentoDTO();
+		estabelecimento1.setNomeEstabelecimento("Buteco do Zeze");
+		estabelecimento1.setEnderecoEstabelecimento("Rua das Chucas");
+		estabelecimento1.setCidadeEstabelecimento("Baixo Guandu");
+		
+		EstabelecimentoDTO estabelecimento2 = new EstabelecimentoDTO();
+		estabelecimento2.setNomeEstabelecimento("Buteco do Zeze");
+		estabelecimento2.setEnderecoEstabelecimento("Rua das Chucas");
+		estabelecimento2.setCidadeEstabelecimento("Baixo Guandu");
+		
+		listaEstabelecimentos = new ArrayList<EstabelecimentoDTO>();
+		listaEstabelecimentos.add(estabelecimento1);
+		listaEstabelecimentos.add(estabelecimento2);
 
+        this.estabelecimentoAdapter = new EstabelecimentoAdapter(this, R.layout.list_row, listaEstabelecimentos);
+        objListaEstabelecimentos.setAdapter(this.estabelecimentoAdapter);
 	}
 	
 	

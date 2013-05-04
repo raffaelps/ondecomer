@@ -21,21 +21,32 @@ public final class R {
         public static final int activity_vertical_margin=0x7f040001;
     }
     public static final class drawable {
-        public static final int ic_launcher=0x7f020000;
+        public static final int estabelecimento=0x7f020000;
+        public static final int gradient_bg=0x7f020001;
+        public static final int gradient_bg_hover=0x7f020002;
+        public static final int ic_launcher=0x7f020003;
+        public static final int icon_seta=0x7f020004;
+        public static final int list_selector=0x7f020005;
     }
     public static final class id {
-        public static final int action_cardapio=0x7f080019;
-        public static final int action_dados_estabelecimento=0x7f080018;
-        public static final int action_sair=0x7f08001a;
-        public static final int btnEntrar=0x7f080013;
-        public static final int btnLimpar=0x7f080014;
-        public static final int edtLogin=0x7f080010;
-        public static final int edtSenha=0x7f080012;
-        public static final int efetuarLogin=0x7f080016;
-        public static final int lista_estabelecimentos=0x7f08000e;
-        public static final int txtLogin=0x7f08000f;
-        public static final int txtSenha=0x7f080011;
-        public static final int txtStatusLogin=0x7f080015;
+        public static final int action_cardapio=0x7f08001f;
+        public static final int action_dados_estabelecimento=0x7f08001e;
+        public static final int action_sair=0x7f080020;
+        public static final int btnEntrar=0x7f080015;
+        public static final int btnLimpar=0x7f080016;
+        public static final int cidadeEstabelecimento=0x7f08001b;
+        public static final int edtLogin=0x7f080012;
+        public static final int edtSenha=0x7f080014;
+        public static final int efetuarLogin=0x7f08001c;
+        public static final int imageView1=0x7f08000e;
+        public static final int imagemEstabelecimento=0x7f080019;
+        public static final int lista_estabelecimentos=0x7f080010;
+        public static final int nomeEstabelecimento=0x7f08001a;
+        public static final int textView1=0x7f08000f;
+        public static final int thumbnail=0x7f080018;
+        public static final int txtLogin=0x7f080011;
+        public static final int txtSenha=0x7f080013;
+        public static final int txtStatusLogin=0x7f080017;
         public static final int txvCidade=0x7f08000b;
         public static final int txvEndereco=0x7f080009;
         public static final int txvIngredientes=0x7f080003;
@@ -50,13 +61,14 @@ public final class R {
         public static final int txvProduto=0x7f080001;
         public static final int txvTelefone=0x7f08000d;
         public static final int txvValor=0x7f080005;
-        public static final int verListaEstabelecimento=0x7f080017;
+        public static final int verListaEstabelecimento=0x7f08001d;
     }
     public static final class layout {
         public static final int activity_dados_cardapio=0x7f030000;
         public static final int activity_dados_estabelecimento=0x7f030001;
         public static final int activity_lista_estabelecimentos=0x7f030002;
         public static final int activity_login=0x7f030003;
+        public static final int list_row=0x7f030004;
     }
     public static final class menu {
         public static final int menu_adm=0x7f070000;

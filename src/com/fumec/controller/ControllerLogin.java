@@ -1,7 +1,8 @@
 package com.fumec.controller;
 
+import com.fumec.modelo.UsuarioDTO;
 import com.fumec.ondecomer.R;
-import com.fumec.modelo.UsuarioImpl;
+import com.fumec.business.UsuarioImpl;
 
 import android.os.Bundle;
 import android.app.Activity;
@@ -35,10 +36,11 @@ public class ControllerLogin extends Activity {
 	
 	public void efetuarLogin(View v){
 
-		String login = objLogin.getText().toString();
-		String senha = objSenha.getText().toString();
-		UsuarioImpl usuario = new UsuarioImpl(login,senha);
-		boolean retorno_validacao = usuario.validarLogin();
+		UsuarioDTO usuario = new UsuarioDTO();
+		usuario.setLogin(objLogin.getText().toString());
+		usuario.setSenha(objSenha.getText().toString());
+		UsuarioImpl usuarioImpl = new UsuarioImpl();
+		boolean retorno_validacao = usuarioImpl.validarLogin(usuario);
 		
 		if (retorno_validacao)
 		{
