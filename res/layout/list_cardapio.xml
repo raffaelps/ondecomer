@@ -16,7 +16,7 @@
 
         <ImageView
             android:id="@+id/imagemProduto"
-            android:layout_width="73dip"
+            android:layout_width="75dip"
             android:layout_height="60dip"
             android:layout_weight="2.89"
             android:contentDescription="@string/app_name"
@@ -28,7 +28,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" 
         style="?android:attr/ratingBarStyleSmall"
-        android:layout_below="@+id/thumbnail"/>
+        android:layout_below="@+id/thumbnail"
+        android:layout_marginLeft="11dip"/>
     
     <TextView
         android:id="@+id/valorProduto"

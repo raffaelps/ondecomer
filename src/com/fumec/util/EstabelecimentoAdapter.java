@@ -34,14 +34,14 @@ public class EstabelecimentoAdapter extends ArrayAdapter<EstabelecimentoDTO> {
             
             if (o != null) {
                     TextView tt = (TextView) v.findViewById(R.id.nomeEstabelecimento);
-                    TextView bt = (TextView) v.findViewById(R.id.cidadeEstabelecimento);
+                    TextView bt = (TextView) v.findViewById(R.id.detalheEstabelecimento);
                     
                     if (tt != null) {
                           tt.setText(o.getNomeEstabelecimento());
                     }
                     
                     if(bt != null){
-                          bt.setText(o.getCidadeEstabelecimento());
+                          bt.setText(o.getEnderecoEstabelecimento());
                     }
             }
             return v;

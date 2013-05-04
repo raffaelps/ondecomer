@@ -36,7 +36,7 @@
         android:id="@+id/btnCardapio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="abrirCardapio()"
+        android:onClick="abrirCardapio"
         android:text="Button" />
         
     <TextView

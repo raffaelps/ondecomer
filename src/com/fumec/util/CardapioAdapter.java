@@ -26,7 +26,7 @@ public class CardapioAdapter extends ArrayAdapter<ProdutoDTO> {
             View v = convertView;
             if (v == null) {
                 LayoutInflater vi = (LayoutInflater)getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-                v = vi.inflate(R.layout.list_estabelecimento, null);
+                v = vi.inflate(R.layout.list_cardapio, null);
             }
             
             ProdutoDTO o = listaProdutos.get(position);
@@ -46,7 +46,7 @@ public class CardapioAdapter extends ArrayAdapter<ProdutoDTO> {
                     
                     if (valorProduto != null)
                     {
-                    	valorProduto.setText(o.getDescricaoProduto());
+                    	valorProduto.setText(o.getPrecoProduto());
                     }
             }
             return v;

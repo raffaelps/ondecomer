@@ -2,27 +2,21 @@ package com.fumec.controller;
 
 import java.util.ArrayList;
 
-import com.fumec.modelo.EstabelecimentoDTO;
 import com.fumec.modelo.ProdutoDTO;
 import com.fumec.ondecomer.R;
 import com.fumec.util.CardapioAdapter;
-import com.fumec.util.EstabelecimentoAdapter;
 
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.TextView;
 import android.widget.Toast;
-import android.widget.AdapterView.OnItemClickListener;
 
 public class ControllerDadosCardapio extends Activity {
 
-	private ListView objListaProdutos = null;
+	private ListView objListaProdutos;
 	private ArrayList<ProdutoDTO> listaProdutos = null;
 	private CardapioAdapter cardapioAdapter = null;
 	
@@ -51,12 +45,13 @@ public class ControllerDadosCardapio extends Activity {
 		produto2.setPrecoProduto("80,00");
 		produto2.setUnidadeProduto("Unidade");
 		
-		listaProdutos = new ArrayList<ProdutoDTO>();
-		listaProdutos.add(produto1);
-		listaProdutos.add(produto2);
+		this.listaProdutos = new ArrayList<ProdutoDTO>();
+		this.listaProdutos.add(produto1);
+		this.listaProdutos.add(produto2);
 
         this.cardapioAdapter = new CardapioAdapter(this, R.layout.list_cardapio, listaProdutos);
-        objListaProdutos.setAdapter(this.cardapioAdapter);
+        this.objListaProdutos.setAdapter(this.cardapioAdapter);
+ 
 	}
 
 	@Override

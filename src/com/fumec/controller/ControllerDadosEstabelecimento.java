@@ -23,12 +23,12 @@ public class ControllerDadosEstabelecimento extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_dados_estabelecimento);
 		
-		//this.txvNome = (TextView) findViewById(R.id.txvNome);
-		//this.txvEndereco = (TextView) findViewById(R.id.txvEndereco);
-		//this.txvCidade = (TextView) findViewById(R.id.txvCidade);
-		//this.txvTelefone = (TextView) findViewById(R.id.txvTelefone);
+		this.txvNome = (TextView) findViewById(R.id.txvNome);
+		this.txvEndereco = (TextView) findViewById(R.id.txvEndereco);
+		this.txvCidade = (TextView) findViewById(R.id.txvCidade);
+		this.txvTelefone = (TextView) findViewById(R.id.txvTelefone);
 		
-		//this.carregarDados();
+		this.carregarDados();
 	}
 	
 	public void carregarDados()
@@ -41,7 +41,7 @@ public class ControllerDadosEstabelecimento extends Activity {
 	
 	public void abrirCardapio(View view)
 	{
-		Intent actCardapio= new Intent(this, ControllerDadosCardapio.class);
+		Intent actCardapio= new Intent(ControllerDadosEstabelecimento.this, ControllerDadosCardapio.class);
 		startActivity(actCardapio);
 	}
 

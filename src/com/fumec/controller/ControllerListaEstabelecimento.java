@@ -25,12 +25,8 @@ public class ControllerListaEstabelecimento extends Activity{
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_lista_estabelecimentos);
-		
-		
+	    
 		objListaEstabelecimentos = (ListView) findViewById(R.id.lista_estabelecimentos);
-
-        //ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,layout,nomesEstabelecimentos); 
-        //objListaEstabelecimentos.setAdapter(adapter);
         
         this.preencherListaEstabelecimentos();
 
@@ -57,7 +53,7 @@ public class ControllerListaEstabelecimento extends Activity{
         
         objListaEstabelecimentos.setOnItemClickListener(new OnItemClickListener() {
 			public void onItemClick(AdapterView<?> adapter, View view, int posicao, long id) {
-				Intent intent = new Intent(view.getContext(),ControllerDadosEstabelecimento.class);
+				Intent intent = new Intent(ControllerListaEstabelecimento.this,ControllerDadosEstabelecimento.class);
 				startActivity(intent);
 			}
         	
