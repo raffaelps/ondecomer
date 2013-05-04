@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_selector"
+    android:orientation="horizontal"
+    android:padding="5dip" >
+
+    <LinearLayout
+        android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="5dip"
+        android:padding="3dip" >
+
+        <ImageView
+            android:id="@+id/imagemProduto"
+            android:layout_width="73dip"
+            android:layout_height="60dip"
+            android:layout_weight="2.89"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/estabelecimento" />
+    </LinearLayout>
+
+    <RatingBar
+        android:id="@+id/ratingBar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_below="@+id/thumbnail"/>
+    
+    <TextView
+        android:id="@+id/valorProduto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:paddingTop="0dip"
+        android:text="R$10,00 (porcao)"
+        android:textColor="#343434"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/nomeProduto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imagemProduto"
+        android:layout_marginLeft="90dip"
+        android:layout_centerVertical="true"
+        android:paddingBottom ="10dip"
+        android:text="Nome"
+        android:textColor="#040404"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <TextView
+        android:id="@+id/descricaoProduto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nomeProduto"
+        android:layout_alignLeft="@+id/nomeProduto"
+        android:paddingTop="15dip"
+        android:layout_centerHorizontal="true"
+        android:text="Descricao"
+        android:textColor="#343434"
+        android:textSize="12sp" />
+    
+</RelativeLayout>

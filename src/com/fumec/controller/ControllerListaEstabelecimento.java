@@ -7,7 +7,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.AdapterView.OnItemClickListener;
 
 import com.fumec.modelo.EstabelecimentoDTO;
 import com.fumec.ondecomer.R;
@@ -37,20 +40,28 @@ public class ControllerListaEstabelecimento extends Activity{
 	{
 		EstabelecimentoDTO estabelecimento1 = new EstabelecimentoDTO();
 		estabelecimento1.setNomeEstabelecimento("Buteco do Zeze");
-		estabelecimento1.setEnderecoEstabelecimento("Rua das Chucas");
+		estabelecimento1.setEnderecoEstabelecimento("Rua das Xucas");
 		estabelecimento1.setCidadeEstabelecimento("Baixo Guandu");
 		
 		EstabelecimentoDTO estabelecimento2 = new EstabelecimentoDTO();
-		estabelecimento2.setNomeEstabelecimento("Buteco do Zeze");
-		estabelecimento2.setEnderecoEstabelecimento("Rua das Chucas");
-		estabelecimento2.setCidadeEstabelecimento("Baixo Guandu");
+		estabelecimento2.setNomeEstabelecimento("Buteco do Kalil");
+		estabelecimento2.setEnderecoEstabelecimento("Rua das Bibas");
+		estabelecimento2.setCidadeEstabelecimento("Belo Horizonte");
 		
 		listaEstabelecimentos = new ArrayList<EstabelecimentoDTO>();
 		listaEstabelecimentos.add(estabelecimento1);
 		listaEstabelecimentos.add(estabelecimento2);
 
-        this.estabelecimentoAdapter = new EstabelecimentoAdapter(this, R.layout.list_row, listaEstabelecimentos);
+        this.estabelecimentoAdapter = new EstabelecimentoAdapter(this, R.layout.list_estabelecimento, listaEstabelecimentos);
         objListaEstabelecimentos.setAdapter(this.estabelecimentoAdapter);
+        
+        objListaEstabelecimentos.setOnItemClickListener(new OnItemClickListener() {
+			public void onItemClick(AdapterView<?> adapter, View view, int posicao, long id) {
+				Intent intent = new Intent(view.getContext(),ControllerDadosEstabelecimento.class);
+				startActivity(intent);
+			}
+        	
+        });
 	}
 	
 	

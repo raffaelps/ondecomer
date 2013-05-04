@@ -2,53 +2,41 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:background="#C5E0DC">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher" 
+            android:contentDescription="@string/app_name"/>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/app_name"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    </LinearLayout>
 
     <TextView
-        android:id="@+id/txvLblProduto"
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/label_produto"
-        android:textAppearance="?android:attr/textAppearanceMedium" 
-        android:textColor="#774F38"/>
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
 
-    <TextView
-        android:id="@+id/txvProduto"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text=""
-        android:textAppearance="?android:attr/textAppearanceLarge" 
-        android:paddingBottom="5pt"/>
-
-    <TextView
-        android:id="@+id/txvLblIngredientes"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/label_ingredientes"
-        android:textAppearance="?android:attr/textAppearanceMedium" 
-        android:textColor="#774F38"/>
-
-    <TextView
-        android:id="@+id/txvIngredientes"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text=""
-        android:textAppearance="?android:attr/textAppearanceLarge" 
-        android:paddingBottom="5pt"/>
-
-    <TextView
-        android:id="@+id/txvLblValor"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/label_valor"
-        android:textAppearance="?android:attr/textAppearanceMedium" 
-        android:textColor="#774F38"/>
-
-    <TextView
-        android:id="@+id/txvValor"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text=""
-        android:textAppearance="?android:attr/textAppearanceLarge" 
-        android:paddingBottom="5pt"/>
+    <ListView
+        android:id="@+id/lstProdutos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
 
 </LinearLayout>

@@ -27,7 +27,7 @@ public class EstabelecimentoAdapter extends ArrayAdapter<EstabelecimentoDTO> {
             View v = convertView;
             if (v == null) {
                 LayoutInflater vi = (LayoutInflater)getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-                v = vi.inflate(R.layout.list_row, null);
+                v = vi.inflate(R.layout.list_estabelecimento, null);
             }
             
             EstabelecimentoDTO o = listaEstabelecimentos.get(position);

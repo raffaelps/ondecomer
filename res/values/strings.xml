@@ -15,7 +15,8 @@
 	
 	<string name="nome_estabelecimento">Nome Estabelecimento:</string> 
 	<string name="endereco_estabelecimento">Endereço:</string> 
-	<string name="cidade_estabelecimento">Cidade:</string> 
+	<string name="cidade_estabelecimento">Cidade:</string>
+	<string name="estado_estabelecimento">Estado:</string> 
 	<string name="telefone_estabelecimento">Telefone:</string>
 	<string name="menu_dados_estabelecimento">Dados estabelecimento</string> 
 	<string name="menu_cardarpio">Cardápio</string> 

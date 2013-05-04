@@ -23,7 +23,8 @@
             </intent-filter>
         </activity>
         <activity android:name="com.fumec.controller.ControllerLogin" />
-          
+        <activity android:name="com.fumec.controller.ControllerDadosEstabelecimento" />
+        <activity android:name="com.fumec.controller.ControllerDadosCardapio" />
     </application>
 
 </manifest>

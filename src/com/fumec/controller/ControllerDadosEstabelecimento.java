@@ -7,6 +7,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -22,12 +23,12 @@ public class ControllerDadosEstabelecimento extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_dados_estabelecimento);
 		
-		this.txvNome = (TextView) findViewById(R.id.txvNome);
-		this.txvEndereco = (TextView) findViewById(R.id.txvEndereco);
-		this.txvCidade = (TextView) findViewById(R.id.txvCidade);
-		this.txvTelefone = (TextView) findViewById(R.id.txvTelefone);
+		//this.txvNome = (TextView) findViewById(R.id.txvNome);
+		//this.txvEndereco = (TextView) findViewById(R.id.txvEndereco);
+		//this.txvCidade = (TextView) findViewById(R.id.txvCidade);
+		//this.txvTelefone = (TextView) findViewById(R.id.txvTelefone);
 		
-		this.carregarDados();
+		//this.carregarDados();
 	}
 	
 	public void carregarDados()
@@ -36,6 +37,12 @@ public class ControllerDadosEstabelecimento extends Activity {
 		this.txvEndereco.setText("Rua Galba, 325, Floresta");
 		this.txvCidade.setText("Belo Horizonte");
 		this.txvTelefone.setText("(31) 3417-0987");
+	}
+	
+	public void abrirCardapio(View view)
+	{
+		Intent actCardapio= new Intent(this, ControllerDadosCardapio.class);
+		startActivity(actCardapio);
 	}
 
 	@Override

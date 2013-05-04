@@ -4,6 +4,7 @@ public class ProdutoDTO {
 
 	private int IdProduto;
 	private String NomeProduto;
+	private String DescricaoProduto;
 	private String TipoProduto;
 	private String PrecoProduto;
 	private String UnidadeProduto;
@@ -51,7 +52,10 @@ public class ProdutoDTO {
 	public void setClassificacaoProduto(String classificacaoProduto) {
 		ClassificacaoProduto = classificacaoProduto;
 	}
-	
-	
-	
+	public String getDescricaoProduto() {
+		return DescricaoProduto;
+	}
+	public void setDescricaoProduto(String descricaoProduto) {
+		DescricaoProduto = descricaoProduto;
+	}
 }
