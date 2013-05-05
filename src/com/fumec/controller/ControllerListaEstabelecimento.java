@@ -24,14 +24,13 @@ public class ControllerListaEstabelecimento extends Activity{
 	private AutoCompleteTextView actCidades;
 	private ArrayList<EstabelecimentoDTO> listaEstabelecimentos = null;
 	private EstabelecimentoAdapter estabelecimentoAdapter = null;
-	private String[] listaCidades = null;
 	
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_lista_estabelecimentos);
 	    
-		objListaEstabelecimentos = (ListView) findViewById(R.id.lstEstabelecimentos);
-		actCidades = (AutoCompleteTextView) findViewById(R.id.actCidades);
+		this.objListaEstabelecimentos = (ListView) findViewById(R.id.lstEstabelecimentos);
+		this.actCidades = (AutoCompleteTextView) findViewById(R.id.actCidades);
         
         this.preencherListaEstabelecimentos();
         this.preencherListaCidades();
