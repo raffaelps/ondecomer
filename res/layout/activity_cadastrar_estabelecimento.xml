@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:background="#C5E0DC">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher" 
+            android:contentDescription="@string/app_name"/>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/app_name"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txvLblNomeEstabelecimento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nome_estabelecimento"
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+        android:textColor="#774F38"/>
+    
+    <EditText
+        android:id="@+id/edtNomeEstabelecimento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/txvLblEnderecoEstabelecimento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/endereco_estabelecimento"
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+        android:textColor="#774F38"/>
+    
+    <EditText
+        android:id="@+id/edtEnderecoEstabelecimento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine" />
+    
+    <TextView
+        android:id="@+id/txvLblCidadeEstabelecimento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cidade_estabelecimento"
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+        android:textColor="#774F38"/>
+    
+    <EditText
+        android:id="@+id/edtCidadeEstabelecimento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text" />
+    
+    <TextView
+        android:id="@+id/txvLblEstadoEstabelecimento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/estado_estabelecimento"
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+        android:textColor="#774F38"/>
+
+    <ExpandableListView
+        android:id="@+id/expListEstadoEstabelecimento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ExpandableListView>
+    
+    <TextView
+        android:id="@+id/txvLblTelefoneEstabelecimento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/telefone_estabelecimento"
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+        android:textColor="#774F38"/>
+    
+     <TextView
+        android:id="@+id/txvLblFormaPagtoEstabelecimento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/formasPagto_estabelecimento"
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+        android:textColor="#774F38"/>
+     
+     <TextView
+        android:id="@+id/txvLblClassificacaoEstabelecimento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/classificaoca_estabelecimento"
+        android:textAppearance="?android:attr/textAppearanceMedium" 
+        android:textColor="#774F38"/>
+
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnCadastrarEstabelecimento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/confirmar"/>
+
+        <Button
+            android:id="@+id/btnLimparCadastroEstabelecimento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/limpar" />
+
+    </LinearLayout>
+    
+   
+
+</LinearLayout>

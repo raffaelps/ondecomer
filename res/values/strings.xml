@@ -18,6 +18,9 @@
 	<string name="cidade_estabelecimento">Cidade:</string>
 	<string name="estado_estabelecimento">Estado:</string> 
 	<string name="telefone_estabelecimento">Telefone:</string>
+	<string name="formasPagto_estabelecimento">Formas Pagamento:</string>
+	<string name="classificaoca_estabelecimento">Classificação:</string>
+	
 	<string name="menu_dados_estabelecimento">Dados estabelecimento</string> 
 	<string name="menu_cardarpio">Cardápio</string> 
 	<string name="menu_sair">Sair</string> 
