@@ -7,13 +7,16 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content" 
-        android:background="#C5E0DC">
+        android:background="#774F38"
+        android:paddingBottom="5dip"
+        android:paddingTop="5dip">
 
         <ImageView
             android:id="@+id/imageView1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_launcher" 
+            android:layout_marginLeft="5dip"
+            android:src="@drawable/icon128" 
             android:contentDescription="@string/app_name"/>
 
         <TextView
@@ -21,113 +24,86 @@
             android:layout_width="0dip"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:layout_marginLeft="5dip"
             android:text="@string/app_name"
             android:layout_gravity="center_vertical|center_horizontal"
-            android:textAppearance="?android:attr/textAppearanceMedium" />
+            android:textAppearance="?android:attr/textAppearanceMedium" 
+            style="@style/BarraTopo"/>
 
     </LinearLayout>
 
-    <Gallery
-        android:id="@+id/gallery1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-    <Button
-        android:id="@+id/btnCardapio"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="abrirCardapio"
-        android:text="Button" />
-        
-    <TextView
-        android:id="@+id/txvLblNome"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/nome_estabelecimento"
-        android:textAppearance="?android:attr/textAppearanceMedium" 
-        android:textColor="#774F38"/>
-
     <TextView
         android:id="@+id/txvNome"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text=""
+        android:text="Buteco"
+        android:gravity="center"
         android:textAppearance="?android:attr/textAppearanceLarge" 
-        android:paddingBottom="5pt"/>
-
-    <TextView
-        android:id="@+id/txvLblEndereco"
+        android:paddingBottom="1dip"
+        android:paddingTop="5dip"
+        style="@style/TextoTitulo"/>
+    
+    <RatingBar
+        android:id="@+id/ratingBar1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/endereco_estabelecimento"
-        android:textAppearance="?android:attr/textAppearanceMedium" 
-        android:textColor="#774F38"/>
+        android:layout_gravity="center"
+        style="?android:attr/ratingBarStyleSmall"/>
 
+    <Gallery
+        android:id="@+id/galEstabelecimento"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:paddingTop="5dip"
+        android:paddingBottom="5dip"/>
+    
     <TextView
         android:id="@+id/txvEndereco"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text=""
-        android:textAppearance="?android:attr/textAppearanceLarge" 
-        android:paddingBottom="5pt"/>
-
-    <TextView
-        android:id="@+id/txvLblCidade"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/cidade_estabelecimento"
-        android:textAppearance="?android:attr/textAppearanceMedium" 
-        android:textColor="#774F38"/>
+        android:text="Rua das vacas"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        style="@style/TextoDetalhe"/>
 
     <TextView
         android:id="@+id/txvCidade"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text=""
+        android:text="Belo Horizonte"
         android:textAppearance="?android:attr/textAppearanceLarge" 
-        android:paddingBottom="5pt"/>
-    
-    <TextView
-        android:id="@+id/txvLblEstado"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/estado_estabelecimento"
-        android:textAppearance="?android:attr/textAppearanceMedium" 
-        android:textColor="#774F38"/>
-    
+        style="@style/TextoDetalhe"/>
+
     <TextView
         android:id="@+id/txvEstado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text=""
+        android:text="Minas Gerais"
         android:textAppearance="?android:attr/textAppearanceLarge" 
-        android:paddingBottom="5pt"/>
-
-    <TextView
-        android:id="@+id/txvLblTelefone"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/telefone_estabelecimento"
-        android:textAppearance="?android:attr/textAppearanceMedium" 
-        android:textColor="#774F38"/>
+        style="@style/TextoDetalhe"/>
 
     <TextView
         android:id="@+id/txvTelefone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text=""
+        android:text="(31) 9898-9809"
         android:textAppearance="?android:attr/textAppearanceLarge" 
-        android:paddingBottom="5pt"/>
+        android:paddingBottom="5pt"
+        style="@style/TextoDetalhe"/>
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_launcher" />
-
-    <RatingBar
-        android:id="@+id/ratingBar1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:src="@drawable/cartoes" 
+        android:contentDescription="cartoes"/>
+    
+    <Button
+        android:id="@+id/btnCardapio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="abrirCardapio"
+        android:text="Cardápio"
+        android:paddingTop="5dip"
+        android:paddingBottom="5dip"/>
 
 </LinearLayout>

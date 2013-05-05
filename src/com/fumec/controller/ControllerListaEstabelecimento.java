@@ -26,7 +26,7 @@ public class ControllerListaEstabelecimento extends Activity{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_lista_estabelecimentos);
 	    
-		objListaEstabelecimentos = (ListView) findViewById(R.id.lista_estabelecimentos);
+		objListaEstabelecimentos = (ListView) findViewById(R.id.lstEstabelecimentos);
         
         this.preencherListaEstabelecimentos();
 

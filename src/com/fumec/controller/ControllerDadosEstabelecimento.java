@@ -1,6 +1,7 @@
 package com.fumec.controller;
 
 import com.fumec.ondecomer.R;
+import com.fumec.util.GaleriaAdapter;
 
 import android.os.Bundle;
 import android.app.Activity;
@@ -8,6 +9,7 @@ import android.content.Intent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Gallery;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -17,6 +19,7 @@ public class ControllerDadosEstabelecimento extends Activity {
 	private TextView txvEndereco;
 	private TextView txvCidade;
 	private TextView txvTelefone;
+	private Gallery galEstabelecimento;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +31,11 @@ public class ControllerDadosEstabelecimento extends Activity {
 		this.txvCidade = (TextView) findViewById(R.id.txvCidade);
 		this.txvTelefone = (TextView) findViewById(R.id.txvTelefone);
 		
+		this.galEstabelecimento = (Gallery) findViewById(R.id.galEstabelecimento);
+		galEstabelecimento.setSpacing(2);
+		
+		galEstabelecimento.setAdapter(new GaleriaAdapter(this));
+
 		this.carregarDados();
 	}
 	

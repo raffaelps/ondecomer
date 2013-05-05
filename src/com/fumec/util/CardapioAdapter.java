@@ -17,7 +17,7 @@ public class CardapioAdapter extends ArrayAdapter<ProdutoDTO> {
 	private ArrayList<ProdutoDTO> listaProdutos;
 	
 	public CardapioAdapter(Context context, int textViewResourceId, ArrayList<ProdutoDTO> lista) {
-		super(context, textViewResourceId);
+		super(context, textViewResourceId, lista);
 		this.listaProdutos = lista;
 	}
 
