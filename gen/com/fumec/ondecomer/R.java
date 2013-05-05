@@ -38,38 +38,39 @@ public final class R {
         public static final int list_selector=0x7f02000e;
     }
     public static final class id {
-        public static final int action_cardapio=0x7f08001e;
-        public static final int action_dados_estabelecimento=0x7f08001d;
-        public static final int action_sair=0x7f08001f;
+        public static final int actCidades=0x7f08000c;
+        public static final int action_cardapio=0x7f08001f;
+        public static final int action_dados_estabelecimento=0x7f08001e;
+        public static final int action_sair=0x7f080020;
         public static final int btnCardapio=0x7f08000b;
-        public static final int btnEntrar=0x7f080011;
-        public static final int btnLimpar=0x7f080012;
-        public static final int descricaoProduto=0x7f080017;
-        public static final int detalheEstabelecimento=0x7f08001a;
-        public static final int edtLogin=0x7f08000e;
-        public static final int edtSenha=0x7f080010;
-        public static final int efetuarLogin=0x7f08001b;
+        public static final int btnEntrar=0x7f080012;
+        public static final int btnLimpar=0x7f080013;
+        public static final int descricaoProduto=0x7f080018;
+        public static final int detalheEstabelecimento=0x7f08001b;
+        public static final int edtLogin=0x7f08000f;
+        public static final int edtSenha=0x7f080011;
+        public static final int efetuarLogin=0x7f08001c;
         public static final int galEstabelecimento=0x7f080005;
         public static final int imageView1=0x7f080000;
         public static final int imageView2=0x7f08000a;
-        public static final int imagemEstabelecimento=0x7f080018;
-        public static final int imagemProduto=0x7f080014;
-        public static final int lstEstabelecimentos=0x7f08000c;
+        public static final int imagemEstabelecimento=0x7f080019;
+        public static final int imagemProduto=0x7f080015;
+        public static final int lstEstabelecimentos=0x7f08000d;
         public static final int lstProdutos=0x7f080002;
-        public static final int nomeEstabelecimento=0x7f080019;
-        public static final int nomeProduto=0x7f080016;
+        public static final int nomeEstabelecimento=0x7f08001a;
+        public static final int nomeProduto=0x7f080017;
         public static final int ratingBar1=0x7f080004;
         public static final int textView1=0x7f080001;
-        public static final int thumbnail=0x7f080013;
-        public static final int txtLogin=0x7f08000d;
-        public static final int txtSenha=0x7f08000f;
+        public static final int thumbnail=0x7f080014;
+        public static final int txtLogin=0x7f08000e;
+        public static final int txtSenha=0x7f080010;
         public static final int txvCidade=0x7f080007;
         public static final int txvEndereco=0x7f080006;
         public static final int txvEstado=0x7f080008;
         public static final int txvNome=0x7f080003;
         public static final int txvTelefone=0x7f080009;
-        public static final int valorProduto=0x7f080015;
-        public static final int verListaEstabelecimento=0x7f08001c;
+        public static final int valorProduto=0x7f080016;
+        public static final int verListaEstabelecimento=0x7f08001d;
     }
     public static final class layout {
         public static final int activity_dados_cardapio=0x7f030000;
@@ -88,6 +89,7 @@ public final class R {
         public static final int app_name=0x7f050000;
         public static final int cidade_estabelecimento=0x7f05000d;
         public static final int confirmar=0x7f050007;
+        public static final int desCartoes=0x7f050018;
         public static final int digitarLogin=0x7f050005;
         public static final int digitarSenha=0x7f050006;
         public static final int efetuarLogin=0x7f050009;
@@ -95,6 +97,7 @@ public final class R {
         public static final int estado_estabelecimento=0x7f05000e;
         public static final int hello_world=0x7f050002;
         public static final int label_ingredientes=0x7f050015;
+        public static final int label_pesquisa=0x7f050019;
         public static final int label_produto=0x7f050014;
         public static final int label_valor=0x7f050016;
         public static final int limpar=0x7f050008;
@@ -107,6 +110,7 @@ public final class R {
         public static final int senha=0x7f050004;
         public static final int telefone_estabelecimento=0x7f05000f;
         public static final int title_activity_cardapio=0x7f050013;
+        public static final int txtBtCardapio=0x7f050017;
     }
     public static final class style {
         /** 

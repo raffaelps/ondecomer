@@ -32,9 +32,8 @@ public class ControllerDadosEstabelecimento extends Activity {
 		this.txvTelefone = (TextView) findViewById(R.id.txvTelefone);
 		
 		this.galEstabelecimento = (Gallery) findViewById(R.id.galEstabelecimento);
-		galEstabelecimento.setSpacing(2);
-		
-		galEstabelecimento.setAdapter(new GaleriaAdapter(this));
+		this.galEstabelecimento.setSpacing(3);
+		this.galEstabelecimento.setAdapter(new GaleriaAdapter(this));
 
 		this.carregarDados();
 	}

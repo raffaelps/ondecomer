@@ -41,7 +41,7 @@ public class EstabelecimentoAdapter extends ArrayAdapter<EstabelecimentoDTO> {
                     }
                     
                     if(bt != null){
-                          bt.setText(o.getEnderecoEstabelecimento());
+                          bt.setText(o.getEnderecoEstabelecimento() + ", " + o.getCidadeEstabelecimento());
                     }
             }
             return v;

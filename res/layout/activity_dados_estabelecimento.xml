@@ -36,7 +36,7 @@
         android:id="@+id/txvNome"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Buteco"
+        android:text="@string/app_name"
         android:gravity="center"
         android:textAppearance="?android:attr/textAppearanceLarge" 
         android:layout_marginBottom="1dip"
@@ -52,40 +52,44 @@
 
     <Gallery
         android:id="@+id/galEstabelecimento"
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content" 
         android:layout_marginTop="5dip"
         android:layout_marginBottom="5dip"/>
     
     <TextView
         android:id="@+id/txvEndereco"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Rua das vacas"
+        android:gravity="center"
+        android:text="@string/app_name"
         android:textAppearance="?android:attr/textAppearanceLarge"
         style="@style/TextoDetalhe"/>
 
     <TextView
         android:id="@+id/txvCidade"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Belo Horizonte"
+        android:gravity="center"
+        android:text="@string/app_name"
         android:textAppearance="?android:attr/textAppearanceLarge" 
         style="@style/TextoDetalhe"/>
 
     <TextView
         android:id="@+id/txvEstado"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Minas Gerais"
+        android:gravity="center"
+        android:text="@string/app_name"
         android:textAppearance="?android:attr/textAppearanceLarge" 
         style="@style/TextoDetalhe"/>
 
     <TextView
         android:id="@+id/txvTelefone"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="(31) 9898-9809"
+        android:gravity="center"
+        android:text="@string/app_name"
         android:textAppearance="?android:attr/textAppearanceLarge" 
         android:layout_marginBottom="5pt"
         style="@style/TextoDetalhe"/>
@@ -95,14 +99,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/cartoes" 
-        android:contentDescription="cartoes"/>
+        android:contentDescription="@string/desCartoes"
+        android:layout_gravity="center"/>
     
     <Button
         android:id="@+id/btnCardapio"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="abrirCardapio"
-        android:text="Cardápio"
+        android:text="@string/txtBtCardapio"
         android:layout_marginTop="5dip"/>
 
 </LinearLayout>

@@ -9,6 +9,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
 import android.widget.ListView;
 import android.widget.AdapterView.OnItemClickListener;
 
@@ -19,17 +21,36 @@ import com.fumec.util.EstabelecimentoAdapter;
 public class ControllerListaEstabelecimento extends Activity{
 	
 	private ListView objListaEstabelecimentos;
+	private AutoCompleteTextView actCidades;
 	private ArrayList<EstabelecimentoDTO> listaEstabelecimentos = null;
 	private EstabelecimentoAdapter estabelecimentoAdapter = null;
+	private String[] listaCidades = null;
 	
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_lista_estabelecimentos);
 	    
 		objListaEstabelecimentos = (ListView) findViewById(R.id.lstEstabelecimentos);
+		actCidades = (AutoCompleteTextView) findViewById(R.id.actCidades);
         
         this.preencherListaEstabelecimentos();
-
+        this.preencherListaCidades();
+	}
+	
+	protected void preencherListaCidades()
+	{
+		String[] listaCidadesAux = {
+			"Baixo Guandu",
+			"Belo Horizonte",
+			"Rio de Janeiro",
+			"São Paulo",
+			"Vitória"
+		};
+		
+		ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,android.R.layout.simple_dropdown_item_1line,listaCidadesAux);
+		AutoCompleteTextView acTextView = (AutoCompleteTextView)findViewById(R.id.actCidades);
+		acTextView.setThreshold(1);
+		acTextView.setAdapter(adapter);
 	}
 	
 	protected void preencherListaEstabelecimentos()
