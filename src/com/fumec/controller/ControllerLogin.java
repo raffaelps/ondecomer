@@ -9,13 +9,12 @@ import android.app.Activity;
 import android.view.Menu;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.TextView;
+import android.widget.Toast;
 
 public class ControllerLogin extends Activity {
 
 	private EditText objLogin;
 	private EditText objSenha;
-	private TextView objStatusLogin;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -24,7 +23,6 @@ public class ControllerLogin extends Activity {
 		
 		objLogin = (EditText) findViewById (R.id.edtLogin);
 		objSenha = (EditText) findViewById (R.id.edtSenha);
-		objStatusLogin = (TextView) findViewById (R.id.txtStatusLogin);
 	}
 	
 	@Override
@@ -48,7 +46,7 @@ public class ControllerLogin extends Activity {
 		}
 		else
 		{
-			objStatusLogin.setText(usuario.getStatusLoginSenha());
+			Toast.makeText(this, usuario.getStatusLoginSenha(),Toast.LENGTH_LONG).show();
 		}
 	}
 	

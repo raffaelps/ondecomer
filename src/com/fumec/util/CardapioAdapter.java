@@ -46,7 +46,7 @@ public class CardapioAdapter extends ArrayAdapter<ProdutoDTO> {
                     
                     if (valorProduto != null)
                     {
-                    	valorProduto.setText(o.getPrecoProduto());
+                    	valorProduto.setText("R$" + o.getPrecoProduto() + " (" + o.getUnidadeProduto() + ")");
                     }
             }
             return v;

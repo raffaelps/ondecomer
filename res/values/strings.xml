@@ -6,8 +6,8 @@
     <string name="hello_world">Hello world!</string>
     <string name="login">Login:</string>
 	<string name="senha">Senha:</string>
-	<string name="digitarLogin">Digite seu login:</string>
-	<string name="digitarSenha">Digite sua senha:</string>
+	<string name="digitarLogin">digite seu login</string>
+	<string name="digitarSenha">digite sua senha</string>
 	<string name="confirmar">Confirmar</string>
 	<string name="limpar">Limpar</string>
 	<string name="efetuarLogin">Efetuar Login</string> 

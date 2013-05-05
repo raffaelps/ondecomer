@@ -39,8 +39,8 @@
         android:text="Buteco"
         android:gravity="center"
         android:textAppearance="?android:attr/textAppearanceLarge" 
-        android:paddingBottom="1dip"
-        android:paddingTop="5dip"
+        android:layout_marginBottom="1dip"
+        android:layout_marginTop="5dip"
         style="@style/TextoTitulo"/>
     
     <RatingBar
@@ -54,8 +54,8 @@
         android:id="@+id/galEstabelecimento"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content" 
-        android:paddingTop="5dip"
-        android:paddingBottom="5dip"/>
+        android:layout_marginTop="5dip"
+        android:layout_marginBottom="5dip"/>
     
     <TextView
         android:id="@+id/txvEndereco"
@@ -87,7 +87,7 @@
         android:layout_height="wrap_content"
         android:text="(31) 9898-9809"
         android:textAppearance="?android:attr/textAppearanceLarge" 
-        android:paddingBottom="5pt"
+        android:layout_marginBottom="5pt"
         style="@style/TextoDetalhe"/>
 
     <ImageView
@@ -103,7 +103,6 @@
         android:layout_height="wrap_content"
         android:onClick="abrirCardapio"
         android:text="Cardápio"
-        android:paddingTop="5dip"
-        android:paddingBottom="5dip"/>
+        android:layout_marginTop="5dip"/>
 
 </LinearLayout>
