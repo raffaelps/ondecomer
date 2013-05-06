@@ -80,12 +80,12 @@ public class ControllerAdmListaEstabelecimento extends Activity {
 		
 		switch (opcao){
 		case R.id.opCadastrarEstabelecimento:
-			//Intent intentCadastrarEstabelecimento = new Intent(this,ControllerCadastrarEstabelecimento.class);
-			//startActivity(intentCadastrarEstabelecimento);
+			Intent intentCadastrarEstabelecimento = new Intent(this,ControllerCadastroEstabelecimento.class);
+			startActivity(intentCadastrarEstabelecimento);
 			break;
 		case R.id.opEditarEstabelecimento:
-			//Intent intentCadastrarEstabelecimento = new Intent(this,ControllerCadastrarEstabelecimento.class);
-			//startActivity(intentCadastrarEstabelecimento);
+			Intent intentEditarEstabelecimento = new Intent(this,ControllerCadastroEstabelecimento.class);
+			startActivity(intentEditarEstabelecimento);
 			break;
 		case R.id.opExcluirEstabelecimento:
 			AlertDialog.Builder builder = new AlertDialog.Builder(ControllerAdmListaEstabelecimento.this);
