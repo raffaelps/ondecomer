@@ -46,6 +46,17 @@
             style="@style/TextoDetalheBranco"/>
 
     </LinearLayout>
+    
+    <TextView
+        android:id="@+id/txvNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge" 
+        android:layout_marginBottom="1dip"
+        android:layout_marginTop="5dip"
+        android:text="@string/tituloCadastroProduto"
+        style="@style/TextoSubTitulo"/>
 
     <TextView
         android:id="@+id/txvLblNomeProduto"

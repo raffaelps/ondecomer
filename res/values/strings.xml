@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     
+    <!-- Strings gerais -->
     <string name="app_name">OndeComer</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
@@ -10,22 +11,44 @@
 	<string name="digitarSenha">digite sua senha</string>
 	<string name="confirmar">Confirmar</string>
 	<string name="limpar">Limpar</string>
-	<string name="efetuarLogin">Efetuar Login</string> 
-	<string name="menuListaEstabelecimentos">Lista de Estabelecimentos</string>
+	<string name="efetuarLogin">Efetuar Login</string>
+	<string name="menuSair">Logoff</string>
+	<string name="txtBtCardapio">Cardápio</string> 
+	<string name="sim">Sim</string>
+	<string name="nao">Não</string> 
 	
+	<!-- Strings das telas de cadastro  -->
 	<string name="nome_estabelecimento">Nome Estabelecimento:</string> 
 	<string name="endereco_estabelecimento">Endereço:</string> 
 	<string name="cidade_estabelecimento">Cidade:</string>
 	<string name="estado_estabelecimento">Estado:</string> 
 	<string name="telefone_estabelecimento">Telefone:</string>
 	<string name="formasPagto_estabelecimento">Formas Pagamento:</string>
-	<string name="classificaoca_estabelecimento">Classificação:</string>
 	
-	<string name="formaPagtoMaster">Master:</string>
-	<string name="formaPagtoVisa">Visa:</string>
-	<string name="formaPagtoAmerican">American:</string>
-	<string name="formaPagtoDiscover">Discover:</string>
+	<string name="nome_produto">Nome Produto:</string> 
+	<string name="descricao_produto">Descrição:</string> 
+	<string name="tipo_produto">Tipo:</string>
+	<string name="preco_produto">Preço:</string> 
+	<string name="unidade_produto">Unidade:</string>
+	<string name="disponibilidade_produto">Está Disponível:</string>
+
+	<string name="formaPagtoMaster">Master</string>
+	<string name="formaPagtoVisa">Visa</string>
+	<string name="formaPagtoAmerican">American</string>
+	<string name="formaPagtoDiscover">Discover</string>
 	
+	<string name="TipoProdutoComida">Comida</string>
+	<string name="TipoProdutoBebida">Bebida</string>
+	<string name="TipoProdutoSobremesa">Sobremesa</string>
+	
+	<string name="UnidadeProdutoPorcao">Porcão</string>
+	<string name="UnidadeProdutoUnidade">Unidade</string>
+	
+	<string name="tituloCadastroEstabelecimento">Cadastro de estabelecimento</string>
+	<string name="tituloCadastroProduto">Cadastro de produto</string>
+	
+	<!-- Strings dos menus -->
+	<string name="menuListaEstabelecimentos">Lista de Estabelecimentos</string>
 	<string name="menuCadastrarEstabelecimento">Cadastrar Estabelecimento</string>
 	<string name="menuEditarEstabelecimento">Editar Estabelecimento</string>
 	<string name="menuExcluirEstabelecimento">Excluir Estabelecimento</string>
@@ -34,29 +57,8 @@
 	<string name="menuEditarProduto">Editar Produto</string>
 	<string name="menuExcluirProduto">Excluir Produto</string>
 	
-	<string name="nome_produto">Nome Produto:</string> 
-	<string name="descricao_produto">Descrição:</string> 
-	<string name="tipo_produto">Tipo:</string>
-	<string name="preco_produto">Preço:</string> 
-	<string name="unidade_produto">Unidade:</string>
-	<string name="disponibilidade_produto">Está Disponível:</string>
-	<string name="classificacao_produto">Classificação:</string>
-	
-	<string name="TipoProdutoComida">Comida:</string>
-	<string name="TipoProdutoBebida">Bebida:</string>
-	<string name="TipoProdutoSobremesa">Sobremesa:</string>
-	
-	<string name="UnidadeProdutoPorcao">Porcão:</string>
-	<string name="UnidadeProdutoUnidade">Unidade:</string>
-	
-	<string name="sim">Sim:</string>
-	<string name="nao">Não:</string>
-	
-	<string name="menuSair">Logoff</string> 
-	<string name="label_valor">Valor:</string>
-	
-	<string name="desCartoes">cartoes de credito aceitos</string>
-	<string name="txtBtCardapio">Cardápio</string>
-	
+	<!-- Strings auxiliares -->
+	<string name="desCartoes">cartoes de credito aceitos</string>	
 	<string name="label_pesquisa">cidade</string>
+	
 </resources>

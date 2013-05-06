@@ -36,6 +36,7 @@ public final class R {
         public static final int icon96=0x7f02000c;
         public static final int icon_seta=0x7f02000d;
         public static final int list_selector=0x7f02000e;
+        public static final int petitgateau=0x7f02000f;
     }
     public static final class id {
         public static final int actCidades=0x7f080032;
@@ -129,57 +130,65 @@ public final class R {
     public static final class menu {
         public static final int menu_adm=0x7f070000;
         public static final int menu_adm_cardapio=0x7f070001;
-        public static final int menu_cadastro=0x7f070002;
-        public static final int menu_user=0x7f070003;
+        public static final int menu_cadastrar_estabelecimento=0x7f070002;
+        public static final int menu_cadastro=0x7f070003;
+        public static final int menu_user=0x7f070004;
     }
     public static final class string {
-        public static final int TipoProdutoBebida=0x7f050024;
-        public static final int TipoProdutoComida=0x7f050023;
-        public static final int TipoProdutoSobremesa=0x7f050025;
-        public static final int UnidadeProdutoPorcao=0x7f050026;
-        public static final int UnidadeProdutoUnidade=0x7f050027;
+        public static final int TipoProdutoBebida=0x7f05001f;
+        public static final int TipoProdutoComida=0x7f05001e;
+        public static final int TipoProdutoSobremesa=0x7f050020;
+        public static final int UnidadeProdutoPorcao=0x7f050021;
+        public static final int UnidadeProdutoUnidade=0x7f050022;
         public static final int action_settings=0x7f050001;
+        /**  Strings gerais 
+         */
         public static final int app_name=0x7f050000;
-        public static final int cidade_estabelecimento=0x7f05000d;
-        public static final int classificacao_produto=0x7f050022;
-        public static final int classificaoca_estabelecimento=0x7f050011;
+        public static final int cidade_estabelecimento=0x7f050010;
         public static final int confirmar=0x7f050007;
+        /**  Strings auxiliares 
+         */
         public static final int desCartoes=0x7f05002c;
-        public static final int descricao_produto=0x7f05001d;
+        public static final int descricao_produto=0x7f050015;
         public static final int digitarLogin=0x7f050005;
         public static final int digitarSenha=0x7f050006;
-        public static final int disponibilidade_produto=0x7f050021;
+        public static final int disponibilidade_produto=0x7f050019;
         public static final int efetuarLogin=0x7f050009;
-        public static final int endereco_estabelecimento=0x7f05000c;
-        public static final int estado_estabelecimento=0x7f05000e;
-        public static final int formaPagtoAmerican=0x7f050014;
-        public static final int formaPagtoDiscover=0x7f050015;
-        public static final int formaPagtoMaster=0x7f050012;
-        public static final int formaPagtoVisa=0x7f050013;
-        public static final int formasPagto_estabelecimento=0x7f050010;
+        public static final int endereco_estabelecimento=0x7f05000f;
+        public static final int estado_estabelecimento=0x7f050011;
+        public static final int formaPagtoAmerican=0x7f05001c;
+        public static final int formaPagtoDiscover=0x7f05001d;
+        public static final int formaPagtoMaster=0x7f05001a;
+        public static final int formaPagtoVisa=0x7f05001b;
+        public static final int formasPagto_estabelecimento=0x7f050013;
         public static final int hello_world=0x7f050002;
-        public static final int label_pesquisa=0x7f05002e;
-        public static final int label_valor=0x7f05002b;
+        public static final int label_pesquisa=0x7f05002d;
         public static final int limpar=0x7f050008;
         public static final int login=0x7f050003;
-        public static final int menuCadastrarEstabelecimento=0x7f050016;
-        public static final int menuCadastrarProduto=0x7f050019;
-        public static final int menuEditarEstabelecimento=0x7f050017;
-        public static final int menuEditarProduto=0x7f05001a;
-        public static final int menuExcluirEstabelecimento=0x7f050018;
-        public static final int menuExcluirProduto=0x7f05001b;
-        public static final int menuListaEstabelecimentos=0x7f05000a;
-        public static final int menuSair=0x7f05002a;
-        public static final int nao=0x7f050029;
-        public static final int nome_estabelecimento=0x7f05000b;
-        public static final int nome_produto=0x7f05001c;
-        public static final int preco_produto=0x7f05001f;
+        public static final int menuCadastrarEstabelecimento=0x7f050026;
+        public static final int menuCadastrarProduto=0x7f050029;
+        public static final int menuEditarEstabelecimento=0x7f050027;
+        public static final int menuEditarProduto=0x7f05002a;
+        public static final int menuExcluirEstabelecimento=0x7f050028;
+        public static final int menuExcluirProduto=0x7f05002b;
+        /**  Strings dos menus 
+         */
+        public static final int menuListaEstabelecimentos=0x7f050025;
+        public static final int menuSair=0x7f05000a;
+        public static final int nao=0x7f05000d;
+        /**  Strings das telas de cadastro  
+         */
+        public static final int nome_estabelecimento=0x7f05000e;
+        public static final int nome_produto=0x7f050014;
+        public static final int preco_produto=0x7f050017;
         public static final int senha=0x7f050004;
-        public static final int sim=0x7f050028;
-        public static final int telefone_estabelecimento=0x7f05000f;
-        public static final int tipo_produto=0x7f05001e;
-        public static final int txtBtCardapio=0x7f05002d;
-        public static final int unidade_produto=0x7f050020;
+        public static final int sim=0x7f05000c;
+        public static final int telefone_estabelecimento=0x7f050012;
+        public static final int tipo_produto=0x7f050016;
+        public static final int tituloCadastroEstabelecimento=0x7f050023;
+        public static final int tituloCadastroProduto=0x7f050024;
+        public static final int txtBtCardapio=0x7f05000b;
+        public static final int unidade_produto=0x7f050018;
     }
     public static final class style {
         /** 

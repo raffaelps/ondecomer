@@ -74,12 +74,12 @@ public class ControllerAdmDadosCardapio extends Activity {
 		
 		switch (opcao){
 		case R.id.opCadastrarProduto:
-			//Intent intentCadastrarEstabelecimento = new Intent(this,ControllerCadastrarEstabelecimento.class);
-			//startActivity(intentCadastrarEstabelecimento);
+			Intent intentCadastrarProduto = new Intent(this,ControllerCadastroProduto.class);
+			startActivity(intentCadastrarProduto);
 			break;
 		case R.id.opEditarProduto:
-			//Intent intentCadastrarEstabelecimento = new Intent(this,ControllerCadastrarEstabelecimento.class);
-			//startActivity(intentCadastrarEstabelecimento);
+			Intent intentEditarProduto = new Intent(this,ControllerCadastroProduto.class);
+			startActivity(intentEditarProduto);
 			break;
 		case R.id.opExcluirProduto:
 			AlertDialog.Builder builder = new AlertDialog.Builder(ControllerAdmDadosCardapio.this);

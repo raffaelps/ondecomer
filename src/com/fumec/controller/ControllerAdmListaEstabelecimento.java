@@ -7,8 +7,6 @@ import com.fumec.ondecomer.R;
 import com.fumec.util.EstabelecimentoAdapter;
 
 import android.app.Activity;
-import android.app.AlertDialog;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -69,7 +67,7 @@ public class ControllerAdmListaEstabelecimento extends Activity {
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.menu_adm, menu);
+		getMenuInflater().inflate(R.menu.menu_cadastrar_estabelecimento, menu);
 		return true;
 	}
 	
@@ -82,27 +80,6 @@ public class ControllerAdmListaEstabelecimento extends Activity {
 		case R.id.opCadastrarEstabelecimento:
 			Intent intentCadastrarEstabelecimento = new Intent(this,ControllerCadastroEstabelecimento.class);
 			startActivity(intentCadastrarEstabelecimento);
-			break;
-		case R.id.opEditarEstabelecimento:
-			Intent intentEditarEstabelecimento = new Intent(this,ControllerCadastroEstabelecimento.class);
-			startActivity(intentEditarEstabelecimento);
-			break;
-		case R.id.opExcluirEstabelecimento:
-			AlertDialog.Builder builder = new AlertDialog.Builder(ControllerAdmListaEstabelecimento.this);
-		        builder.setTitle("Excluir Estabelecimento")
-		        .setMessage("Confirma a exclusão do estabelecimento: Buteco do Zeze?")
-		        .setCancelable(false)
-		        .setPositiveButton("Sim",new DialogInterface.OnClickListener() {
-		            public void onClick(DialogInterface dialog, int id) {
-		            }
-		        })
-		        .setNegativeButton("Não",new DialogInterface.OnClickListener() {
-		            public void onClick(DialogInterface dialog, int id) {
-		                dialog.cancel();
-		            }
-		        });
-		        AlertDialog alert = builder.create();
-		        alert.show();
 			break;
 		case R.id.opSair:
 			Intent intentListaEstabelecimentos = new Intent(this,ControllerListaEstabelecimento.class);
