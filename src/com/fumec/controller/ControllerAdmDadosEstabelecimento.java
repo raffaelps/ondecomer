@@ -1,6 +1,8 @@
 package com.fumec.controller;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -77,8 +79,21 @@ public class ControllerAdmDadosEstabelecimento extends Activity {
 			//startActivity(intentCadastrarEstabelecimento);
 			break;
 		case R.id.opExcluirEstabelecimento:
-			//Intent intentCadastrarEstabelecimento = new Intent(this,ControllerCadastrarEstabelecimento.class);
-			//startActivity(intentCadastrarEstabelecimento);
+			AlertDialog.Builder builder = new AlertDialog.Builder(ControllerAdmDadosEstabelecimento.this);
+	        builder.setTitle("Excluir Estabelecimento")
+	        .setMessage("Confirma a exclusão do estabelecimento: Buteco do Zeze?")
+	        .setCancelable(false)
+	        .setPositiveButton("Sim",new DialogInterface.OnClickListener() {
+	            public void onClick(DialogInterface dialog, int id) {
+	            }
+	        })
+	        .setNegativeButton("Não",new DialogInterface.OnClickListener() {
+	            public void onClick(DialogInterface dialog, int id) {
+	                dialog.cancel();
+	            }
+	        });
+	        AlertDialog alert = builder.create();
+	        alert.show();
 			break;
 		case R.id.opSair:
 			Intent intentListaEstabelecimentos = new Intent(this,ControllerListaEstabelecimento.class);
