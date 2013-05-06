@@ -11,7 +11,7 @@
 	<string name="confirmar">Confirmar</string>
 	<string name="limpar">Limpar</string>
 	<string name="efetuarLogin">Efetuar Login</string> 
-	<string name="listarEstabelecimentos">Listar Estabelecimentos</string>
+	<string name="menuListaEstabelecimentos">Lista de Estabelecimentos</string>
 	
 	<string name="nome_estabelecimento">Nome Estabelecimento:</string> 
 	<string name="endereco_estabelecimento">Endereço:</string> 
@@ -21,16 +21,19 @@
 	<string name="formasPagto_estabelecimento">Formas Pagamento:</string>
 	<string name="classificaoca_estabelecimento">Classificação:</string>
 	
-	<string name="menu_dados_estabelecimento">Dados estabelecimento</string> 
-	<string name="menu_cardarpio">Cardápio</string> 
-	<string name="menu_sair">Sair</string> 
-	<string name="title_activity_cardapio">Cardapio</string> 
-	<string name="label_produto">Produto:</string> 
-	<string name="label_ingredientes">Ingredientes:</string> 
+	<string name="menuCadastrarEstabelecimento">Cadastrar Estabelecimento</string>
+	<string name="menuEditarEstabelecimento">Editar Estabelecimento</string>
+	<string name="menuExcluirEstabelecimento">Excluir Estabelecimento</string>
+	
+	<string name="menuCadastrarProduto">Cadastrar Produto</string>
+	<string name="menuEditarProduto">Editar Produto</string>
+	<string name="menuExcluirProduto">Excluir Produto</string>
+	
+	<string name="menuSair">Logoff</string> 
 	<string name="label_valor">Valor:</string>
 	
+	<string name="desCartoes">cartoes de credito aceitos</string>
 	<string name="txtBtCardapio">Cardápio</string>
-	<string name="desCartoes">Catões</string>
 	
 	<string name="label_pesquisa">cidade</string>
 </resources>

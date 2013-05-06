@@ -1,34 +1,28 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android" >
-
-    <item
-        android:id="@+id/efetuarLogin"
-        android:orderInCategory="100"
-        android:showAsAction="never"
-        android:title="@string/efetuarLogin"/>
     
     <item
-        android:id="@+id/verListaEstabelecimento"
+        android:id="@+id/opCadastrarEstabelecimento"
         android:orderInCategory="100"
         android:showAsAction="never"
-        android:title="@string/listarEstabelecimentos"/>
+        android:title="@string/menuCadastrarEstabelecimento"/>
     
     <item
-        android:id="@+id/action_dados_estabelecimento"
+        android:id="@+id/opEditarEstabelecimento"
         android:orderInCategory="100"
         android:showAsAction="never"
-        android:title="@string/menu_dados_estabelecimento"/>
+        android:title="@string/menuEditarEstabelecimento"/>
     
     <item
-        android:id="@+id/action_cardapio"
+        android:id="@+id/opExcluirEstabelecimento"
         android:orderInCategory="100"
         android:showAsAction="never"
-        android:title="@string/menu_cardarpio"/>
+        android:title="@string/menuExcluirEstabelecimento"/>
     
     <item
-        android:id="@+id/action_sair"
+        android:id="@+id/opSair"
         android:orderInCategory="100"
         android:showAsAction="never"
-        android:title="@string/menu_sair"/>
+        android:title="@string/menuSair"/>
 
 </menu>
 

@@ -11,7 +11,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Gallery;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class ControllerDadosEstabelecimento extends Activity {
 
@@ -55,33 +54,26 @@ public class ControllerDadosEstabelecimento extends Activity {
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.menu_adm, menu);
+		getMenuInflater().inflate(R.menu.menu_user, menu);
 		return true;
 	}
 	
 	@Override
-	public boolean onOptionsItemSelected(MenuItem item) {
-		// TODO Auto-generated method stub
+	public boolean onOptionsItemSelected(MenuItem item){
+		
 		int opcao = item.getItemId();
 		
-		switch (opcao) {
-		case R.id.action_dados_estabelecimento:
-			break;
-		case R.id.action_cardapio:
-			Intent actCardapio= new Intent(this, ControllerDadosCardapio.class);
-			startActivity(actCardapio);
-			break;
-		case R.id.action_sair:
-			Toast.makeText(this,"Sair",Toast.LENGTH_LONG).show();
-			//Intent irmenualteraatleta= new Intent(this, FormularioAtleta.class);
-			//startActivity(irmenualteraatleta);
+		switch (opcao){
+		case R.id.efetuarLogin:
+			Intent intent_login = new Intent(this,ControllerLogin.class);
+			startActivity(intent_login);
 			break;
 		default:
 			break;
 		}
 		
-		
 		return super.onOptionsItemSelected(item);
+		
 	}
 
 }

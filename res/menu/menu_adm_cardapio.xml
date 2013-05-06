@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <item
+        android:id="@+id/opCadastrarProduto"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/menuCadastrarProduto"/>
+    
+    <item
+        android:id="@+id/opEditarProduto"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/menuEditarProduto"/>
+    
+    <item
+        android:id="@+id/opExcluirProduto"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/menuExcluirProduto"/>
+    
+    <item
+        android:id="@+id/opSair"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/menuSair"/>
+
+</menu>

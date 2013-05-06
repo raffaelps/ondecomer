@@ -2,6 +2,10 @@ package com.fumec.controller;
 
 import java.util.ArrayList;
 
+import com.fumec.modelo.EstabelecimentoDTO;
+import com.fumec.ondecomer.R;
+import com.fumec.util.EstabelecimentoAdapter;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,47 +13,27 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.AutoCompleteTextView;
 import android.widget.ListView;
 import android.widget.AdapterView.OnItemClickListener;
+import android.widget.TextView;
 
-import com.fumec.modelo.EstabelecimentoDTO;
-import com.fumec.ondecomer.R;
-import com.fumec.util.EstabelecimentoAdapter;
+public class ControllerAdmListaEstabelecimento extends Activity {
 
-public class ControllerListaEstabelecimento extends Activity{
-	
 	private ListView objListaEstabelecimentos;
-	private AutoCompleteTextView actCidades;
 	private ArrayList<EstabelecimentoDTO> listaEstabelecimentos = null;
 	private EstabelecimentoAdapter estabelecimentoAdapter = null;
+	private TextView txvNomeUsuario;
 	
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_lista_estabelecimentos);
+		setContentView(R.layout.activity_adm_lista_estabelecimento);
 	    
-		this.objListaEstabelecimentos = (ListView) findViewById(R.id.lstEstabelecimentos);
-		this.actCidades = (AutoCompleteTextView) findViewById(R.id.actCidades);
+		this.objListaEstabelecimentos = (ListView) findViewById(R.id.lstAdmEstabelecimentos);
+		this.txvNomeUsuario = (TextView) findViewById(R.id.txvNomeUsuario);
+		
+		this.txvNomeUsuario.setText("leonardo");
         
         this.preencherListaEstabelecimentos();
-        this.preencherListaCidades();
-	}
-	
-	protected void preencherListaCidades()
-	{
-		String[] listaCidadesAux = {
-			"Baixo Guandu",
-			"Belo Horizonte",
-			"Rio de Janeiro",
-			"São Paulo",
-			"Vitória"
-		};
-		
-		ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,android.R.layout.simple_dropdown_item_1line,listaCidadesAux);
-		AutoCompleteTextView acTextView = (AutoCompleteTextView)findViewById(R.id.actCidades);
-		acTextView.setThreshold(1);
-		acTextView.setAdapter(adapter);
 	}
 	
 	protected void preencherListaEstabelecimentos()
@@ -73,17 +57,17 @@ public class ControllerListaEstabelecimento extends Activity{
         
         objListaEstabelecimentos.setOnItemClickListener(new OnItemClickListener() {
 			public void onItemClick(AdapterView<?> adapter, View view, int posicao, long id) {
-				Intent intent = new Intent(ControllerListaEstabelecimento.this,ControllerDadosEstabelecimento.class);
+				Intent intent = new Intent(ControllerAdmListaEstabelecimento.this,ControllerAdmDadosEstabelecimento.class);
 				startActivity(intent);
 			}
-        	
         });
 	}
+	
 	
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.menu_user, menu);
+		getMenuInflater().inflate(R.menu.menu_adm, menu);
 		return true;
 	}
 	
@@ -93,9 +77,21 @@ public class ControllerListaEstabelecimento extends Activity{
 		int opcao = item.getItemId();
 		
 		switch (opcao){
-		case R.id.efetuarLogin:
-			Intent intent_login = new Intent(this,ControllerLogin.class);
-			startActivity(intent_login);
+		case R.id.opCadastrarEstabelecimento:
+			//Intent intentCadastrarEstabelecimento = new Intent(this,ControllerCadastrarEstabelecimento.class);
+			//startActivity(intentCadastrarEstabelecimento);
+			break;
+		case R.id.opEditarEstabelecimento:
+			//Intent intentCadastrarEstabelecimento = new Intent(this,ControllerCadastrarEstabelecimento.class);
+			//startActivity(intentCadastrarEstabelecimento);
+			break;
+		case R.id.opExcluirEstabelecimento:
+			//Intent intentCadastrarEstabelecimento = new Intent(this,ControllerCadastrarEstabelecimento.class);
+			//startActivity(intentCadastrarEstabelecimento);
+			break;
+		case R.id.opSair:
+			Intent intentListaEstabelecimentos = new Intent(this,ControllerListaEstabelecimento.class);
+			startActivity(intentListaEstabelecimentos);
 			break;
 		default:
 			break;

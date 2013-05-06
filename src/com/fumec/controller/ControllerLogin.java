@@ -6,6 +6,7 @@ import com.fumec.business.UsuarioImpl;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.content.Intent;
 import android.view.Menu;
 import android.view.View;
 import android.widget.EditText;
@@ -42,7 +43,8 @@ public class ControllerLogin extends Activity {
 		
 		if (retorno_validacao)
 		{
-			 			
+			Intent intentListaEstabelecimentos = new Intent(ControllerLogin.this, ControllerAdmListaEstabelecimento.class);
+			startActivity(intentListaEstabelecimentos);
 		}
 		else
 		{

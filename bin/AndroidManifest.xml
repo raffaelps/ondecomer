@@ -25,6 +25,9 @@
         <activity android:name="com.fumec.controller.ControllerLogin" />
         <activity android:name="com.fumec.controller.ControllerDadosEstabelecimento" />
         <activity android:name="com.fumec.controller.ControllerDadosCardapio" />
+        <activity android:name="com.fumec.controller.ControllerAdmListaEstabelecimento" />
+        <activity android:name="com.fumec.controller.ControllerAdmDadosEstabelecimento" />
+        <activity android:name="com.fumec.controller.ControllerAdmDadosCardapio" />
     </application>
 
 </manifest>

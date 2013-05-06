@@ -12,7 +12,6 @@ import android.content.Intent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ListView;
-import android.widget.Toast;
 
 public class ControllerDadosCardapio extends Activity {
 
@@ -57,31 +56,26 @@ public class ControllerDadosCardapio extends Activity {
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.menu_adm, menu);
+		getMenuInflater().inflate(R.menu.menu_user, menu);
 		return true;
 	}
 	
 	@Override
-	public boolean onOptionsItemSelected(MenuItem item) {
-		// TODO Auto-generated method stub
+	public boolean onOptionsItemSelected(MenuItem item){
+		
 		int opcao = item.getItemId();
 		
-		switch (opcao) {
-		case R.id.action_dados_estabelecimento:
-			Intent actDadosEstabelecimento= new Intent(this, ControllerDadosEstabelecimento.class);
-			startActivity(actDadosEstabelecimento);
-			break;
-		case R.id.action_cardapio:
-			break;
-		case R.id.action_sair:
-			Toast.makeText(this,"Sair",Toast.LENGTH_LONG).show();
+		switch (opcao){
+		case R.id.efetuarLogin:
+			Intent intent_login = new Intent(this,ControllerLogin.class);
+			startActivity(intent_login);
 			break;
 		default:
 			break;
 		}
 		
-		
 		return super.onOptionsItemSelected(item);
+		
 	}
 
 }
