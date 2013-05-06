@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+<LinearLayout 
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -15,7 +21,7 @@
             android:layout_height="wrap_content"
             android:src="@drawable/ic_launcher" 
             android:contentDescription="@string/app_name"/>
-
+        
         <TextView
             android:id="@+id/textView1"
             android:layout_width="0dip"
@@ -33,7 +39,7 @@
         android:layout_height="wrap_content"
         android:text="@string/nome_estabelecimento"
         android:textAppearance="?android:attr/textAppearanceMedium" 
-        android:textColor="#774F38"/>
+        style="@style/TextoDetalhe"/>
     
     <EditText
         android:id="@+id/edtNomeEstabelecimento"
@@ -47,7 +53,7 @@
         android:layout_height="wrap_content"
         android:text="@string/endereco_estabelecimento"
         android:textAppearance="?android:attr/textAppearanceMedium" 
-        android:textColor="#774F38"/>
+        style="@style/TextoDetalhe"/>
     
     <EditText
         android:id="@+id/edtEnderecoEstabelecimento"
@@ -61,7 +67,7 @@
         android:layout_height="wrap_content"
         android:text="@string/cidade_estabelecimento"
         android:textAppearance="?android:attr/textAppearanceMedium" 
-        android:textColor="#774F38"/>
+        style="@style/TextoDetalhe"/>
     
     <EditText
         android:id="@+id/edtCidadeEstabelecimento"
@@ -75,21 +81,27 @@
         android:layout_height="wrap_content"
         android:text="@string/estado_estabelecimento"
         android:textAppearance="?android:attr/textAppearanceMedium" 
-        android:textColor="#774F38"/>
+        style="@style/TextoDetalhe"/>
 
-    <ExpandableListView
-        android:id="@+id/expListEstadoEstabelecimento"
+	<EditText
+        android:id="@+id/edtEstadoEstabelecimento"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-    </ExpandableListView>
-    
+        android:layout_height="wrap_content"
+        android:inputType="text" />
+            
     <TextView
         android:id="@+id/txvLblTelefoneEstabelecimento"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/telefone_estabelecimento"
         android:textAppearance="?android:attr/textAppearanceMedium" 
-        android:textColor="#774F38"/>
+        style="@style/TextoDetalhe"/>
+    
+    <EditText
+        android:id="@+id/edtTelefoneEstabelecimento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone" />
     
      <TextView
         android:id="@+id/txvLblFormaPagtoEstabelecimento"
@@ -97,16 +109,67 @@
         android:layout_height="wrap_content"
         android:text="@string/formasPagto_estabelecimento"
         android:textAppearance="?android:attr/textAppearanceMedium" 
-        android:textColor="#774F38"/>
+        style="@style/TextoDetalhe"/>
      
-     <TextView
-        android:id="@+id/txvLblClassificacaoEstabelecimento"
-        android:layout_width="wrap_content"
+     <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="horizontal" >
+        
+        <TableRow>
+            <CheckBox 
+		    android:id="@+id/chcBoxFormaPagtoMaster"
+		    android:text="@string/formaPagtoMaster"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    style="@style/TextoDetalhe" />
+		 
+		 <CheckBox 
+		    android:id="@+id/chcBoxFormaPagtoVisa"
+		    android:text="@string/formaPagtoVisa"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    style="@style/TextoDetalhe" />            
+        </TableRow> 
+                
+        <TableRow>
+            <CheckBox 
+		    android:id="@+id/chcBoxFormaPagtoAmerican"
+		    android:text="@string/formaPagtoAmerican"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    style="@style/TextoDetalhe" />    
+		 
+		 <CheckBox 
+		    android:id="@+id/chcBoxFormaPagtoDiscover"
+		    android:text="@string/formaPagtoDiscover"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    style="@style/TextoDetalhe" />                      
+        </TableRow>
+    </TableLayout>
+     
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/classificaoca_estabelecimento"
-        android:textAppearance="?android:attr/textAppearanceMedium" 
-        android:textColor="#774F38"/>
+        android:orientation="horizontal">
+         
+	     <TextView
+	        android:id="@+id/txvLblClassificacaoEstabelecimento"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/classificaoca_estabelecimento"
+	        android:textAppearance="?android:attr/textAppearanceMedium" 
+	        style="@style/TextoDetalhe"/>
+	
+	     <RatingBar
+	         android:id="@+id/rtnBarClassficacaoEstabelecimento"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         style="?android:attr/ratingBarStyleSmall" />
 
+     </LinearLayout>
+     
      <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -116,17 +179,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/confirmar"/>
-
-        <Button
-            android:id="@+id/btnLimparCadastroEstabelecimento"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/limpar" />
+            android:text="@string/confirmar"/>    
 
     </LinearLayout>
     
    
 
 </LinearLayout>
+
+</ScrollView>

@@ -21,6 +21,11 @@
 	<string name="formasPagto_estabelecimento">Formas Pagamento:</string>
 	<string name="classificaoca_estabelecimento">Classificação:</string>
 	
+	<string name="formaPagtoMaster">Master:</string>
+	<string name="formaPagtoVisa">Visa:</string>
+	<string name="formaPagtoAmerican">American:</string>
+	<string name="formaPagtoDiscover">Discover:</string>
+	
 	<string name="menuCadastrarEstabelecimento">Cadastrar Estabelecimento</string>
 	<string name="menuEditarEstabelecimento">Editar Estabelecimento</string>
 	<string name="menuExcluirEstabelecimento">Excluir Estabelecimento</string>
