@@ -34,149 +34,149 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/txvLblNomeEstabelecimento"
+        android:id="@+id/txvLblNomeProduto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/nome_estabelecimento"
+        android:text="@string/nome_produto"
         android:textAppearance="?android:attr/textAppearanceMedium" 
         style="@style/TextoDetalhe"/>
     
     <EditText
-        android:id="@+id/edtNomeEstabelecimento"
+        android:id="@+id/edtNomeProduto"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="text" />
 
     <TextView
-        android:id="@+id/txvLblEnderecoEstabelecimento"
+        android:id="@+id/txvLblDescricaoProduto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/endereco_estabelecimento"
+        android:text="@string/descricao_produto"
         android:textAppearance="?android:attr/textAppearanceMedium" 
         style="@style/TextoDetalhe"/>
     
     <EditText
-        android:id="@+id/edtEnderecoEstabelecimento"
+        android:id="@+id/edtDescricaoProduto"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textMultiLine" />
     
     <TextView
-        android:id="@+id/txvLblCidadeEstabelecimento"
+        android:id="@+id/txvLblTipoProduto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/cidade_estabelecimento"
+        android:text="@string/tipo_produto"
         android:textAppearance="?android:attr/textAppearanceMedium" 
         style="@style/TextoDetalhe"/>
     
-    <EditText
-        android:id="@+id/edtCidadeEstabelecimento"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="text" />
+    <RadioGroup 
+	    android:id="@+id/rdGroupTipoProduto" 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal">
+	    <RadioButton 
+	        android:id="@+id/rdButtonTipoProdutoComida"
+	        android:text="@string/TipoProdutoComida"
+	        android:checked="false" />
+	    <RadioButton 
+	        android:id="@+id/rdButtonTipoProdutoBebida"
+	        android:text="@string/TipoProdutoBebida"
+	        android:checked="false" />
+	    <RadioButton 
+	        android:id="@+id/rdButtonTipoProdutoSobremesa"
+	        android:text="@string/TipoProdutoSobremesa"
+	        android:checked="false" />	    
+	</RadioGroup>
     
+
     <TextView
-        android:id="@+id/txvLblEstadoEstabelecimento"
+        android:id="@+id/txvLblPrecoProduto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/estado_estabelecimento"
+        android:text="@string/preco_produto"
         android:textAppearance="?android:attr/textAppearanceMedium" 
         style="@style/TextoDetalhe"/>
 
 	<EditText
-        android:id="@+id/edtEstadoEstabelecimento"
+        android:id="@+id/edtprecoProduto"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="text" />
             
     <TextView
-        android:id="@+id/txvLblTelefoneEstabelecimento"
+        android:id="@+id/txvLblUnidadeProduto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/telefone_estabelecimento"
+        android:text="@string/unidade_produto"
         android:textAppearance="?android:attr/textAppearanceMedium" 
         style="@style/TextoDetalhe"/>
     
-    <EditText
-        android:id="@+id/edtTelefoneEstabelecimento"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="phone" />
+  	<RadioGroup 
+	    android:id="@+id/rdGroupUnidadeProduto" 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal">
+	    <RadioButton 
+	        android:id="@+id/rdButtonUnidadeProdutoPorcao"
+	        android:text="@string/UnidadeProdutoPorcao"
+	        android:checked="false" />
+	    <RadioButton 
+	        android:id="@+id/rdButtonTipoProdutoUnidade"
+	        android:text="@string/UnidadeProdutoUnidade"
+	        android:checked="false" />	  
+	</RadioGroup>
+
     
      <TextView
-        android:id="@+id/txvLblFormaPagtoEstabelecimento"
+        android:id="@+id/txvLblDisponibilidadeProduto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/formasPagto_estabelecimento"
+        android:text="@string/disponibilidade_produto"
         android:textAppearance="?android:attr/textAppearanceMedium" 
         style="@style/TextoDetalhe"/>
      
-     <TableLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" 
-        android:orientation="horizontal" >
-        
-        <TableRow>
-            <CheckBox 
-		    android:id="@+id/chcBoxFormaPagtoMaster"
-		    android:text="@string/formaPagtoMaster"
-		    android:layout_width="wrap_content"
-		    android:layout_height="wrap_content"
-		    style="@style/TextoDetalhe" />
-		 
-		 <CheckBox 
-		    android:id="@+id/chcBoxFormaPagtoVisa"
-		    android:text="@string/formaPagtoVisa"
-		    android:layout_width="wrap_content"
-		    android:layout_height="wrap_content"
-		    style="@style/TextoDetalhe" />            
-        </TableRow> 
-                
-        <TableRow>
-            <CheckBox 
-		    android:id="@+id/chcBoxFormaPagtoAmerican"
-		    android:text="@string/formaPagtoAmerican"
-		    android:layout_width="wrap_content"
-		    android:layout_height="wrap_content"
-		    style="@style/TextoDetalhe" />    
-		 
-		 <CheckBox 
-		    android:id="@+id/chcBoxFormaPagtoDiscover"
-		    android:text="@string/formaPagtoDiscover"
-		    android:layout_width="wrap_content"
-		    android:layout_height="wrap_content"
-		    style="@style/TextoDetalhe" />                      
-        </TableRow>
-    </TableLayout>
-     
+     <RadioGroup 
+	    android:id="@+id/rdGroupDisponibilidadeProduto" 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal">
+	    <RadioButton 
+	        android:id="@+id/rdButtonDisponibilidadeProdutoSim"
+	        android:text="@string/sim"
+	        android:checked="false" />
+	    <RadioButton 
+	        android:id="@+id/rdButtonDisponibilidadeProdutoNao"
+	        android:text="@string/nao"
+	        android:checked="false" />	  
+	</RadioGroup>
+          
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
          
 	     <TextView
-	        android:id="@+id/txvLblClassificacaoEstabelecimento"
+	        android:id="@+id/txvLblClassificacaoProduto"
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
-	        android:text="@string/classificaoca_estabelecimento"
+	        android:text="@string/classificacao_produto"
 	        android:textAppearance="?android:attr/textAppearanceMedium" 
 	        style="@style/TextoDetalhe"/>
 	
 	     <RatingBar
-	         android:id="@+id/rtnBarClassficacaoEstabelecimento"
+	         android:id="@+id/rtnBarClassficacaoProduto"
 	         android:layout_width="wrap_content"
 	         android:layout_height="wrap_content"
 	         style="?android:attr/ratingBarStyleSmall" />
 
      </LinearLayout>
-     
+
      <Button
          android:id="@+id/btnCadastrarEstabelecimento"
          android:layout_width="match_parent"
          android:layout_height="wrap_content"
          android:layout_weight="1"
          android:text="@string/confirmar"/>    
-   
 
 </LinearLayout>
 

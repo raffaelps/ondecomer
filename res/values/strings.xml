@@ -34,6 +34,24 @@
 	<string name="menuEditarProduto">Editar Produto</string>
 	<string name="menuExcluirProduto">Excluir Produto</string>
 	
+	<string name="nome_produto">Nome Produto:</string> 
+	<string name="descricao_produto">Descrição:</string> 
+	<string name="tipo_produto">Tipo:</string>
+	<string name="preco_produto">Preço:</string> 
+	<string name="unidade_produto">Unidade:</string>
+	<string name="disponibilidade_produto">Está Disponível:</string>
+	<string name="classificacao_produto">Classificação:</string>
+	
+	<string name="TipoProdutoComida">Comida:</string>
+	<string name="TipoProdutoBebida">Bebida:</string>
+	<string name="TipoProdutoSobremesa">Sobremesa:</string>
+	
+	<string name="UnidadeProdutoPorcao">Porcão:</string>
+	<string name="UnidadeProdutoUnidade">Unidade:</string>
+	
+	<string name="sim">Sim:</string>
+	<string name="nao">Não:</string>
+	
 	<string name="menuSair">Logoff</string> 
 	<string name="label_valor">Valor:</string>
 	
