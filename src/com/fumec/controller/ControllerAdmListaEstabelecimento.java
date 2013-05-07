@@ -45,7 +45,7 @@ public class ControllerAdmListaEstabelecimento extends Activity {
 		
 		EstabelecimentoDTO estabelecimento2 = new EstabelecimentoDTO();
 		estabelecimento2.setNomeEstabelecimento("Buteco do Kalil");
-		estabelecimento2.setEnderecoEstabelecimento("Rua das Bibas");
+		estabelecimento2.setEnderecoEstabelecimento("Rua das Bicas");
 		estabelecimento2.setCidadeEstabelecimento("Belo Horizonte");
 		
 		listaEstabelecimentos = new ArrayList<EstabelecimentoDTO>();

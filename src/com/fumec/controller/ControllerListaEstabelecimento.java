@@ -30,7 +30,7 @@ public class ControllerListaEstabelecimento extends Activity{
 		setContentView(R.layout.activity_lista_estabelecimentos);
 	    
 		this.objListaEstabelecimentos = (ListView) findViewById(R.id.lstEstabelecimentos);
-		this.actCidades = (AutoCompleteTextView) findViewById(R.id.actCidades);
+		this.setActCidades((AutoCompleteTextView) findViewById(R.id.actCidades));
         
         this.preencherListaEstabelecimentos();
         this.preencherListaCidades();
@@ -61,7 +61,7 @@ public class ControllerListaEstabelecimento extends Activity{
 		
 		EstabelecimentoDTO estabelecimento2 = new EstabelecimentoDTO();
 		estabelecimento2.setNomeEstabelecimento("Buteco do Kalil");
-		estabelecimento2.setEnderecoEstabelecimento("Rua das Bibas");
+		estabelecimento2.setEnderecoEstabelecimento("Rua das Bicas");
 		estabelecimento2.setCidadeEstabelecimento("Belo Horizonte");
 		
 		listaEstabelecimentos = new ArrayList<EstabelecimentoDTO>();
@@ -103,5 +103,13 @@ public class ControllerListaEstabelecimento extends Activity{
 		
 		return super.onOptionsItemSelected(item);
 		
+	}
+
+	public AutoCompleteTextView getActCidades() {
+		return actCidades;
+	}
+
+	public void setActCidades(AutoCompleteTextView actCidades) {
+		this.actCidades = actCidades;
 	}
 }

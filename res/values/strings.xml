@@ -3,8 +3,6 @@
     
     <!-- Strings gerais -->
     <string name="app_name">OndeComer</string>
-    <string name="action_settings">Settings</string>
-    <string name="hello_world">Hello world!</string>
     <string name="login">Login:</string>
 	<string name="senha">Senha:</string>
 	<string name="digitarLogin">digite seu login</string>
@@ -48,7 +46,6 @@
 	<string name="tituloCadastroProduto">Cadastro de produto</string>
 	
 	<!-- Strings dos menus -->
-	<string name="menuListaEstabelecimentos">Lista de Estabelecimentos</string>
 	<string name="menuCadastrarEstabelecimento">Cadastrar Estabelecimento</string>
 	<string name="menuEditarEstabelecimento">Editar Estabelecimento</string>
 	<string name="menuExcluirEstabelecimento">Excluir Estabelecimento</string>

@@ -37,7 +37,7 @@
         android:layout_height="wrap_content"
         android:gravity="right"
         android:paddingTop="0dip"
-        android:text="R$10,00 (porcao)"
+        android:text=""
         android:textColor="#343434"
         android:textSize="12sp" />
 
@@ -49,7 +49,7 @@
         android:layout_marginLeft="90dip"
         android:layout_centerVertical="true"
         android:paddingBottom ="10dip"
-        android:text="Nome"
+        android:text=""
         android:textColor="#040404"
         android:textSize="18sp"
         android:textStyle="bold"
@@ -63,7 +63,7 @@
         android:layout_alignLeft="@+id/nomeProduto"
         android:paddingTop="15dip"
         android:layout_centerHorizontal="true"
-        android:text="Descricao"
+        android:text=""
         android:textColor="#343434"
         android:textSize="12sp" />
     
